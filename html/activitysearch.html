@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Search an Activity</title>
+        <meta name="author" content="Adi Nomberg, Stav Bar, Lital Menashe"/>
+        <meta name="description" content="Search for your favourite activities to put in your trip itinerary"/>
+        <meta name="keywords" content="Trips, Planning, Search, Activity, Attractions, Restaurants, Hiking Trails" />
+        <link rel="shortcut icon" href="../imgs/icon-logo.png">
+        <link rel="stylesheet" type="text/css" href="../css/activitysearch.css.css">
+    </head>
+    <body>
+        <section>
+            <h1> Search an Activity </h1>
+            <form method=“GET” action=“”>
+                <label for="acitvity-name-search"> Search by name: </label>
+                <input type="text" id="acitvity-name-search" placeholder="Activity name..."/>
+            <br/>
+                <label for="acitvity-destination"> Destination: </label>
+                <input list="acitvity-destination-search" id="acitvity-destination" name="Destination" placeholder="Enter destination (Country)"/>
+                <datalist id="acitvity-destination-search">
+                    <option value="Worldwide" selected></option>
+                    <option value="Australia"></option>
+                    <option value="Belgium"></option>
+                    <option value="Canada"></option>
+                    <option value="Denmark"></option>
+                    <option value="Egypt"></option>
+                    <option value="France"></option>
+                    <option value="Greece"></option>
+                    <option value="Hungary"></option>
+                    <option value="Israel"></option>
+                    <option value="Japan"></option>
+                    <option value="Korea"></option>
+                    <option value="Latvia"></option>
+                    <option value="Mexico"></option>
+                    <option value="New Zealand"></option>
+                    <option value="Oman"></option>
+                    <option value="Peru"></option>
+                    <option value="Qatar"></option>
+                    <option value="Russia"></option>
+                    <option value="Spain"></option>
+                    <option value="Tanzania"></option>
+                    <option value="United States"></option>
+                    <option value="Vietnam"></option>
+                    <option value="Yemen"></option>
+                    <option value="Zimbabwe"></option>&nbsp;
+                </datalist>
+                <label for="acitvity-season-search"> Season: </label>
+                <select id="acitvity-season-search" name="Season">
+                    <option value="All Year Round" selected>All Year Round</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Winter">Winter</option>
+                    <option value="Fall">Fall</option>
+                    <option value="Spring">Spring</option>&nbsp;
+                </select>
+                <label for="acitvity-category-search"> Category: </label>
+                <select id="acitvity-category-search" name="Category">
+                    <option value="All Categories" selected>All Categories</option>
+                    <option value="Adventure">Adventure trip</option>
+                    <option value="City">City trip</option>
+                    <option value="Relax">Relaxing vacation</option>&nbsp;
+                </select>
+                <input type="submit" name="form-submit" value="Search">
+            </form>
+        </section>
+        <section>
+            <form method=“GET” action=“”>
+                <h2>Search Results:</h2>
+                <ul name="search-results-list" style="list-style-type:none">
+                    <li>
+                        <ul name="activity-in-results" style="list-style-type:none">
+                            <li name="name-of-activity">
+                                <input type="checkbox">
+                                <h3>Eiffel Tower</h3>
+                            </li>
+                            <li name="destination-of-activity">
+                                Destination: France
+                            </li>
+                            <li name="season-of-activity">
+                                Season: All year round
+                            </li>
+                            <li name="category-of-activity">
+                                Category: City trip
+                            </li>
+                            <li name="picture-of-activity">
+                                <img src="../imgs/eiffel-tower.jpg" title="Eiffel Tower" width="150px"/>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul name="activity-in-results" style="list-style-type:none">
+                            <li name="name-of-activity">
+                                <input type="checkbox">
+                                <h3>Pedra Queimada - Lajinha - Degredo - São Miguel</h3>
+                            </li>
+                            <li name="destination-of-activity">
+                                Destination: Portugal
+                            </li>
+                            <li name="season-of-activity">
+                                Season: All year round
+                            </li>
+                            <li name="category-of-activity">
+                                Category: Adventure trip
+                            </li>
+                            <li name="picture-of-activity">
+                                <img src="../imgs/pedra-queimada.jpg" title="Pedra Queimada - Lajinha - Degredo - São Miguel" width="150px"/>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul name="activity-in-results" style="list-style-type:none">
+                            <li name="name-of-activity">
+                                <input type="checkbox">
+                                <h3>&Moshik</h3>
+                            </li>
+                            <li name="destination-of-activity">
+                                Destination: Netherlands
+                            </li>
+                            <li name="season-of-activity">
+                                Season: All year round
+                            </li>
+                            <li name="category-of-activity">
+                                Category: City trip
+                            </li>
+                            <li name="picture-of-activity">
+                                <img src="../imgs/moshik.jpg" title="&Moshik" width="150px"/>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <input type="submit" name="form-submit" value="Add to Favourite Activities"/>
+            </form>
+        </section>
+    </body>
+</html>

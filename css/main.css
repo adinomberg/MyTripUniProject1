@@ -1,0 +1,202 @@
+body {
+    background: #FFFFFF;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 100%;
+    margin: 0%;
+}
+
+img.logo_image
+{
+    height: 60px;
+}
+
+.main_nav_list {
+    background-color: rgba(255, 255, 255, 0.95);
+    list-style-type: none;
+    overflow: hidden;
+    padding-left: 0px;
+    position: fixed;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+}
+
+.main_nav_item_logo {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    align-items: center;
+    float: left;
+}
+
+.main_nav_item {
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    margin-top: 25px;
+}
+
+.main_nav_item a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+.main_nav_item.active a
+{
+    color: #9c9c9c;
+}
+
+.main_nav_item a:hover {
+    color: #9c9c9c;
+
+}
+
+.main_nav_item.plan {
+    float: right;
+    margin-top: 25px;
+}
+
+.but_plan {
+    font-size: 16px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #fea353;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.but_plan:hover {
+    background: #fe8b1d;
+}
+
+.home_background
+{
+    background: url("../imgs/simon-migaj-421505-unsplash.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0%;
+}
+
+
+main {
+    padding-top: 100px;
+}
+
+.home_content {
+    padding-top: 50px;
+    padding-left: 20px;
+    color: white;
+}
+
+.main_header > b {
+    font-size: 50px;
+}
+
+.main_header {
+    font-size: 30px;
+}
+
+.second_header {
+    font-size: 20px;
+}
+
+section {
+}
+
+
+footer {
+    text-align: center;
+    padding: 75px;
+    background-color: #053138;
+    color: #d7d7d7;
+}
+
+.list-footer{
+    list-style-type: none;
+
+}
+
+.col1{
+    text-align: left;
+    position: relative;
+    min-height: 1px;
+    float: left;
+    width: 20%;
+    margin-left: -10px;
+    padding-left: 170px;
+
+}
+
+.col2{
+    text-align: left;
+    position: relative;
+    min-height: 1px;
+    float: left;
+    width: 20%;
+    margin-left: 70px;
+
+}
+
+.col3{
+    text-align: left;
+    position: relative;
+    min-height: 1px;
+    float: left;
+    width: 27%;
+
+}
+
+.container{
+    display: inline-block;
+    font-size: 13px;
+
+}
+
+h2.footer-headline {
+    font-size: 15px;
+
+}
+
+i.footer-icon{
+    font-size: 15px;
+}
+
+span.footer-text{
+    padding-left: 10px;
+}
+
+p.copyright{
+    display: inline-block;
+    padding-top: 45px;
+}
+
+a.footer-link{
+    text-decoration: none;
+    color: #d7d7d7;
+}
+
+a.footer-link:hover{
+    color: white;
+}
+
+
+
