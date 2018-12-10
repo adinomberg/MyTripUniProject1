@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Adi Nomberg, Stav Bar, Lital Menashe"/>
+    <meta name="Hiking trip" content="information about hiking trip"/>
+    <meta name="keywords" content="trip, hiking, information" />
+    <link rel="shortcut icon" href="../imgs/icon-logo.png">
+    <title>Hiking Trip</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/activities.css">
+    <link rel="stylesheet" type="text/css" href="../css/hiking-trip.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="hiking-trip-background">
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <ul class="main_nav_list">
+                <li class="main_nav_item_logo"><a href="../index.html"><img class="logo_image" src="../imgs/logo.png" alt="mytrip-logo"/></a></li>
+                <li class="main_nav_item"><a href="../index.html">Home</a></li>
+                <li class="main_nav_item"><a href="about.html">About Us</a></li>
+                <li class="main_nav_item-Equipment active"><a href="equipmentListSearch.html" class="dropbtn">Equipment Lists</a>
+                    <div class="equipment-dropdown">
+                        <a  href="equipmentListSearch.html" class="equipment-dropdown-item">Search Equipment List</a>
+                        <a  href="AddEquipmentList.html" class="equipment-dropdown-item">Add Equipment List</a>
+                    </div>
+                </li>
+                <li class="main_nav_item active"><a href="activitysearch.html">Activities</a></li>
+                <li class="main_nav_item"><a href="contactus.html">Contact Us</a></li>
+                <li class="main_nav_item login"><button type="button" class="but_login"><i class="material-icons login-icon">person_pin</i></button></li>
+                <li class="main_nav_item plan"><a href="MyTrip.html"><button type="button" class="but_plan">Plan Your Trip!</button></a></li>
+            </ul>
+            <div class="arrow-up"></div>
+            <div class="login-form">
+                <form method="post" action="login-form.php">
+                    <div class="email-container-login">
+                        <input type="text" class="email-login" placeholder="Email"/>
+                    </div>
+                    <div class="password-container-login">
+                        <input type="password" class="password-login" placeholder="Password"/>
+                    </div>
+                    <input type="submit" name="submit-login" value="Log In" class="login-but"/>
+                    <div class="login-sent">
+                        Don't have an account yet? Sign up <a class="here-link" href="loginorsignup.html">HERE</a>.
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="main-header"> Hiking Trip </h1>
+</div>
+<h1 class="destination-header"> Pedra Queimada - São Miguel </h1>
+<section class="tags">
+    <p class="tags"> <i class="material-icons">flight</i><br> <b>Destination:</b><br> Portugal <br></p>
+    <p class="tags">  <i class="material-icons">category</i><br> <b> Category:</b><br> Adventure trip <br></p>
+    <p class="tags"> <i class="material-icons">cloud</i> <b><br> Recommended season:</b><br> all year round <br></p>
+</section>
+
+<div class="div-favorite">
+    <button type="submit" class="favorite-button" name="favorites-submit" value="submitted" href=".html"><i class="material-icons star">star</i>Add To Your Favorites</button>
+</div>
+<section>
+    <h3> Trail information: </h3>
+    <b> Trail type: </b>Circular <br>
+    <i class="material-icons"> directions_walk </i>  <b> Difficulty: </b>Medium <br>
+    <b> Extension: </b> 6.6 km <br>
+    <i class="material-icons">av_timer</i> <b> Time average: </b>2h30 <br>
+</section>
+
+<section>
+    <h3>Trail Info: </h3>
+    <article>
+
+        <p> This small circular route begins in Largo de Santo António,  in the village of Maia.
+            Head South along a dirt road known as Pedra Queimada and follow the waymarks until you reach the regional road.
+        </p>
+
+        <p>Continue by walking parallel to the road, enjoying the view over the North Coast,
+            village of Maia, Ponta Formosa and Ponta do Cintrão.
+        </p>
+
+        <p>Proceed along the trail downwards by the Lajinha way, among agricultural fields until you reach the road again –
+            Rua do Rosário – with the fountain Velha on your right (spring water).
+        </p>
+        <p> Continue towards the centre until you arrive at the bathing area of Calhau da Areia –
+            by taking the connection to PR 27 SMI Praia da Viola. Follow the waymarks passing the viewpoint of
+            Melo Nunes where it is possible to access a rocky area.
+        <p/>
+        <p> The trail continues along the coast, passing the viewpoint of Frade. Along the way you will go
+            through ETAR and cross the bridge over Ribeira da Cruz. Further ahead there is a detour to the right
+            that will take you to natural swimming pools.
+        </p>
+        <p> Keep on going on the dirt road until the regional road and turn left towards the centre of the village.
+            Along the road there are several points of interest such as the Tobacco Museum and Solar do Lalém.
+            Continue until you reach to the start of the trail. <br>
+        </p>
+    </article>
+</section>
+
+<img class="activitie-img" src="../imgs/pedra-queimada.jpg" title="Pedra Queimada - Lajinha - Degredo - São Miguel" alt="Pedra Queimada - Lajinha - Degredo - São Miguel" />
+
+</main>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-col col1">
+            <h2 class="footer-headline">MyTrip</h2>
+            <p> A free online trip planner that can help you build a personalized itinerary for your next vacation. </p>
+        </div>
+        <div class="footer-col col2">
+            <ul class="list-footer">
+                <li class=""><h2 class="footer-headline">Information</h2></li>
+                <li class=""><a class="footer-link" href="about.html">About</a></li>
+                <li class=""><a class="footer-link" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col col3">
+            <ul class="list-footer">
+                <li class=""><h2 class="footer-headline">Have a Question?</h2></li>
+                <li><span class="icon icon-map-marker"></span><i class="material-icons footer-icon">location_on</i><span class="footer-text"> 1 Ben-Gurion Ave, Beer-Sheva, Israel</span></li>
+                <li><span class="icon icon-phone"></span><i class="material-icons footer-icon">phone</i><span class="footer-text"> +972-8-646-1600</span></a></li>
+                <li><span class="icon icon-envelope"></span><i class="material-icons footer-icon">email</i><span class="footer-text"> info@mytrip.com</span></a></li>
+            </ul>
+        </div>
+
+        <p class="copyright">
+            <i class="material-icons footer-icon">copyright</i>MyTrip  All rights reserved | This website is made with <i class="material-icons footer-icon">favorite</i> by Adi Nomberg, Lital Menashe, Stav Bar
+        </p>
+    </div>
+</footer>
+<script src="../js/login-form.js"></script>
+</body>
+</html>

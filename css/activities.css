@@ -1,0 +1,71 @@
+@import url("vars.css");
+
+.main-header{
+    padding-top: 160px;
+    padding-bottom: 100px;
+    color: white;
+    font-size: 70px;
+    margin-left: 50px;
+}
+
+.destination-header{
+    margin-left: 135px;
+    padding-top: 60px;
+    font-size: 45px;
+}
+
+section{
+    margin: 4%;
+    width: 700px;
+}
+
+p.tags {
+    border-radius: 20px;
+    background: #21c1fe;
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+section.tags {
+    padding-left: 230px;
+}
+
+i.star {
+    color: yellow;
+}
+
+button.favorite-button{
+    font-family: "Poppins", Arial, sans-serif;
+    border-radius: 12px;
+    float: right;
+    background: var(--main-buttons-background);
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 5.5px;
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+button.favorite-button:hover{
+    background: var(--main-buttons-hover);
+}
+
+div.div-favorite{
+    padding-right: 76px;
+    position: sticky;
+    top: 93px;
+}
+
+img.activitie-img{
+    width: 550px;
+    border-radius: 10px;
+    margin: 4%;
+}

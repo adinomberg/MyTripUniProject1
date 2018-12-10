@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Adi Nomberg, Stav Bar, Lital Menashe"/>
+    <meta name="Restaurants" content="information about restaurants"/>
+    <meta name="keywords" content="Restaurant, food, information" />
+    <link rel="shortcut icon" href="../imgs/icon-logo.png">
+    <title>Restaurants</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/activities.css">
+    <link rel="stylesheet" type="text/css" href="../css/restaurant.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="restaurant-background">
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <ul class="main_nav_list">
+                <li class="main_nav_item_logo"><a href="../index.html"><img class="logo_image" src="../imgs/logo.png" alt="mytrip-logo"/></a></li>
+                <li class="main_nav_item"><a href="../index.html">Home</a></li>
+                <li class="main_nav_item"><a href="about.html">About Us</a></li>
+                <li class="main_nav_item-Equipment active"><a href="equipmentListSearch.html" class="dropbtn">Equipment Lists</a>
+                    <div class="equipment-dropdown">
+                        <a  href="equipmentListSearch.html" class="equipment-dropdown-item">Search Equipment List</a>
+                        <a  href="AddEquipmentList.html" class="equipment-dropdown-item">Add Equipment List</a>
+                    </div>
+                </li>
+                <li class="main_nav_item active"><a href="activitysearch.html">Activities</a></li>
+                <li class="main_nav_item"><a href="contactus.html">Contact Us</a></li>
+                <li class="main_nav_item login"><button type="button" class="but_login"><i class="material-icons login-icon">person_pin</i></button></li>
+                <li class="main_nav_item plan"><a href="MyTrip.html"><button type="button" class="but_plan">Plan Your Trip!</button></a></li>
+            </ul>
+            <div class="arrow-up"></div>
+            <div class="login-form">
+                <form method="post" action="login-form.php">
+                    <div class="email-container-login">
+                        <input type="text" class="email-login" placeholder="Email"/>
+                    </div>
+                    <div class="password-container-login">
+                        <input type="password" class="password-login" placeholder="Password"/>
+                    </div>
+                    <input type="submit" name="submit-login" value="Log In" class="login-but"/>
+                    <div class="login-sent">
+                        Don't have an account yet? Sign up <a class="here-link" href="loginorsignup.html">HERE</a>.
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="main-header"> Restaurants </h1>
+</div>
+<h1 class="destination-header"> &Moshik </h1>
+<section class="tags">
+    <p class="tags"> <i class="material-icons">flight</i><br> <b>Destination:</b><br> Netherlands <br></p>
+    <p class="tags">  <i class="material-icons">category</i><br> <b> Category:</b><br> city trip <br></p>
+    <p class="tags"> <i class="material-icons">cloud</i> <b><br> Recommended season:</b><br> all year round <br></p>
+</section>
+
+<div class="div-favorite">
+    <button type="submit" class="favorite-button" name="favorites-submit" value="submitted" href=".html"><i class="material-icons star">star</i>Add To Your Favorites</button>
+</div>
+
+<section>
+    <h3> Description</h3>
+    <article>
+
+        <p>  Welcome to the gastronomical world of Moshik Roth. Reach culinary heights by enjoying two Michelin star awarded creations. <br>
+            The restaurant has an incredible view overlooking the Unesco World Heritage city centre of Amsterdam.
+            Indulge yourself in total luxury in an informal & relaxed atmosphere.<br>
+            Kick of your shoes, sit back and get enchanted by a gastronomical journey that will last in your memory.<br>
+        </p>
+    </article>
+
+    <h3> Cuisine</h3>
+    <span> International, Vegetarian Friendly, Vegan Options, Gluten Free Options </span>
+
+    <h3> Average prices</h3>
+    <span>537-706</span>
+
+    <h3> Restaurant features</h3>
+    <p>Serves Alcohol, Accepts Visa, Reservations, Private Dining, Seating, Waitstaff, Full Bar, Accepts American Express,
+        Accepts Mastercard, Digital Payments, Free Wifi, Accepts Credit Cards </p>
+
+    <h3> Open Hours </h3>
+    <section>
+        <b>Sunday</b> <br>
+        12:00 PM - 2:00 PM<br>
+        7:00 PM - 9:30 PM<br>
+        <b>Wednesday</b><br>
+        7:00 PM - 9:30 PM<br>
+        <b>Thursday</b><br>
+        7:00 PM - 9:30 PM<br>
+        <b>Friday</b><br>
+        7:00 PM - 9:30 PM<br>
+        12:00 PM - 2:00 PM<br>
+        <b>Saturday</b><br>
+        7:00 PM - 9:30 PM<br>
+    </section>
+
+    <h3> Location and Contact Information</h3>
+    <section>
+        <i class="material-icons">location_on</i><b>Address:</b> Oosterdokskade 5 | Second Floor, 1011 AD Amsterdam, The Netherlands <br>
+        <i class="material-icons">phone</i> <b>Phone Number:</b> +31 20 260 2094 <br>
+    </section>
+    <br>
+    <img class="activitie-img" src="../imgs/moshik.jpg" title="&Moshik" alt="&moshik" />
+
+
+</section>
+</main>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-col col1">
+            <h2 class="footer-headline">MyTrip</h2>
+            <p> A free online trip planner that can help you build a personalized itinerary for your next vacation. </p>
+        </div>
+        <div class="footer-col col2">
+            <ul class="list-footer">
+                <li class=""><h2 class="footer-headline">Information</h2></li>
+                <li class=""><a class="footer-link" href="about.html">About</a></li>
+                <li class=""><a class="footer-link" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col col3">
+            <ul class="list-footer">
+                <li class=""><h2 class="footer-headline">Have a Question?</h2></li>
+                <li><span class="icon icon-map-marker"></span><i class="material-icons footer-icon">location_on</i><span class="footer-text"> 1 Ben-Gurion Ave, Beer-Sheva, Israel</span></li>
+                <li><span class="icon icon-phone"></span><i class="material-icons footer-icon">phone</i><span class="footer-text"> +972-8-646-1600</span></a></li>
+                <li><span class="icon icon-envelope"></span><i class="material-icons footer-icon">email</i><span class="footer-text"> info@mytrip.com</span></a></li>
+            </ul>
+        </div>
+
+        <p class="copyright">
+            <i class="material-icons footer-icon">copyright</i>MyTrip  All rights reserved | This website is made with <i class="material-icons footer-icon">favorite</i> by Adi Nomberg, Lital Menashe, Stav Bar
+        </p>
+    </div>
+</footer>
+<script src="../js/login-form.js"></script>
+</body>
+</html>

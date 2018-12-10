@@ -7,32 +7,97 @@
         <meta name="description" content="Get in touch with us today for more information. Contact us via phone or email"/>
         <meta name="keywords" content="Trips, Planning, Contact, Company, Phone, Email, Address" />
         <link rel="shortcut icon" href="../imgs/icon-logo.png">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" type="text/css" href="../css/contactus.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     </head>
-    <body>
+    <body class="contact-body">
+    <div class="contact_background">
+        <!-- Navigation -->
+        <nav>
+            <ul class="main_nav_list">
+                <li class="main_nav_item_logo"><a href="../index.html"><img class="logo_image" src="../imgs/logo.png" alt="mytrip-logo"/></a></li>
+                <li class="main_nav_item"><a href="../index.html">Home</a></li>
+                <li class="main_nav_item"><a href="about.html">About Us</a></li>
+                <li class="main_nav_item-Equipment active"><a href="equipmentListSearch.html" class="dropbtn">Equipment Lists</a>
+                    <div class="equipment-dropdown">
+                        <a  href="equipmentListSearch.html" class="equipment-dropdown-item">Search Equipment List</a>
+                        <a  href="AddEquipmentList.html" class="equipment-dropdown-item">Add Equipment List</a>
+                    </div>
+                </li>
+                <li class="main_nav_item"><a href="activitysearch.html">Activities</a></li>
+                <li class="main_nav_item active"><a href="contactus.html">Contact Us</a></li>
+                <li class="main_nav_item login"><button type="button" class="but_login"><i class="material-icons login-icon">person_pin</i></button></li>
+                <li class="main_nav_item plan"><a href="MyTrip.html"><button type="button" class="but_plan">Plan Your Trip!</button></a></li>
+            </ul>
+            <div class="arrow-up"></div>
+            <div class="login-form">
+                <form method="post" action="login-form.php">
+                    <div class="email-container-login">
+                        <input type="text" class="email-login" placeholder="Email"/>
+                    </div>
+                    <div class="password-container-login">
+                        <input type="password" class="password-login" placeholder="Password"/>
+                    </div>
+                    <input type="submit" name="submit-login" value="Log In" class="login-but"/>
+                    <div class="login-sent">
+                        Don't have an account yet? Sign up <a class="here-link" href="loginorsignup.html">HERE</a>.
+                    </div>
+                </form>
+            </div>
+        </nav>
             <main>
-                <section>
+                <section class="contact-header">
                     <h1>Contact Us</h1>
                 </section>
-                <article>
-                    <p>
+    </div>
+                <article class="contact-main">
+                    <p class="first-para">
                         Need help? More information? Get in touch today and speak to our friendly team!
                     </p>
                     <p>
-                        Phone: +972-8-646-1600
+                        <i class="material-icons phone-icon">phone</i> <b>Phone:</b><span class="phone">+972-8-646-1600</span>
                     </p>
                     <p>
-                        Email: info@mytrip.com
+                        <i class="material-icons email-icon">email</i> <b>Email:</b><span class="email">info@mytrip.com</span>
                     </p>
                     <p>
-                        Address: 1 Ben-Gurion Ave.,<br/>
-                        <span class="address">Beer-Sheva 84105,</span><br/>
-                        <span class="address">Israel</span>
+                        <i class="material-icons address-icon">location_on</i> <b>Address: </b><div class="address">1 Ben-Gurion Ave.,<br/>
+                        Beer-Sheva 84105,<br/>
+                        Israel</div>
                     </p>
                 </article>
             </main>
-    </body>
-    <foot>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-col col1">
+                <h2 class="footer-headline">MyTrip</h2>
+                <p> A free online trip planner that can help you build a personalized itinerary for your next vacation. </p>
+            </div>
+            <div class="footer-col col2">
+                <ul class="list-footer">
+                    <li class=""><h2 class="footer-headline">Information</h2></li>
+                    <li class=""><a class="footer-link" href="about.html">About</a></li>
+                    <li class=""><a class="footer-link" href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col col3">
+                <ul class="list-footer">
+                    <li class=""><h2 class="footer-headline">Have a Question?</h2></li>
+                    <li><span class="icon icon-map-marker"></span><i class="material-icons footer-icon">location_on</i><span class="footer-text"> 1 Ben-Gurion Ave, Beer-Sheva, Israel</span></li>
+                    <li><span class="icon icon-phone"></span><i class="material-icons footer-icon">phone</i><span class="footer-text"> +972-8-646-1600</span></a></li>
+                    <li><span class="icon icon-envelope"></span><i class="material-icons footer-icon">email</i><span class="footer-text"> info@mytrip.com</span></a></li>
+                </ul>
+            </div>
 
-    </foot>
+            <p class="copyright">
+                <i class="material-icons footer-icon">copyright</i>MyTrip  All rights reserved | This website is made with <i class="material-icons footer-icon">favorite</i> by Adi Nomberg, Lital Menashe, Stav Bar
+            </p>
+        </div>
+    </footer>
+    <script src="../js/login-form.js"></script>
+    </body>
 </html>

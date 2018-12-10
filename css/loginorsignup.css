@@ -1,0 +1,194 @@
+@import url("vars.css");
+
+.loginsignup_background {
+    background: url("../imgs/bg_3.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 55%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.main-loginorsignup {
+    padding-top: 250px;
+    padding-bottom: 200px;
+}
+
+.main-login {
+    background: rgba(246, 246, 246, 0.85);
+    width: 30%;
+    margin-left: 200px;
+    padding: 10px 0px 50px 0px;
+    border-radius: 30px;
+}
+
+.login-header {
+    text-align: center;
+}
+
+.main-login input[type="text"] {
+    padding: 7px 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    box-sizing: border-box;
+    border: 2px solid rgba(203, 204, 188, 0.76);
+    border-radius: 4px;
+    text-align: start;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+}
+
+.main-login input[type="password"] {
+    padding: 7px 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    box-sizing: border-box;
+    border: 2px solid rgba(203, 204, 188, 0.76);
+    border-radius: 4px;
+    text-align: start;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+}
+
+.main-login input[type="text"]:focus {
+    border: 2px solid var(--main-buttons-background);
+}
+
+.main-login input[type="password"]:focus {
+    border: 2px solid var(--main-buttons-background);
+}
+
+.email-container-login2 {
+    margin-left: 10%;
+}
+
+.password-container-login2 {
+    margin-left: 10%;
+    margin-top: 5px;
+}
+
+
+.login-but2 {
+    font-size: 16px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: var(--main-buttons-background);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-top: 15px;
+    margin-left: 36%;
+}
+
+.login-but2:hover {
+    background: var(--main-buttons-hover);
+}
+
+.main-signup {
+    background: rgba(246, 246, 246, 0.85);
+    width: 30%;
+    margin-left: 100px;
+    padding: 15px 10px 50px 0px;
+    border-radius: 30px;
+    margin-left: 53%;
+    margin-top: -25%;
+}
+
+.signup-header {
+    text-align: center;
+}
+
+.signup-second-head {
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.first-name-container-signup {
+    margin-left: 10%;
+    margin-bottom: 5px;
+}
+
+.main-signup input[type='text'] {
+    padding: 7px 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    box-sizing: border-box;
+    border: 2px solid rgba(203, 204, 188, 0.76);
+    border-radius: 4px;
+    text-align: start;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+}
+
+.main-signup input[type='password'] {
+    padding: 7px 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    box-sizing: border-box;
+    border: 2px solid rgba(203, 204, 188, 0.76);
+    border-radius: 4px;
+    text-align: start;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+}
+
+.main-signup input[type='text']:focus {
+    border: 2px solid var(--main-buttons-background);
+}
+
+.main-signup input[type='password']:focus {
+    border: 2px solid var(--main-buttons-background);
+}
+
+.last-name-container-signup {
+    margin-left: 10%;
+    margin-bottom: 5px;
+}
+
+.email-container-signup {
+    margin-left: 10%;
+    margin-bottom: 5px;
+}
+
+.password-container-signup {
+    margin-left: 10%;
+    margin-bottom: 5px;
+}
+
+.signup-but {
+    font-size: 16px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: var(--main-buttons-background);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-top: 15px;
+    margin-left: 36%;
+}
+
+.signup-but:hover {
+    background: var(--main-buttons-hover);
+}

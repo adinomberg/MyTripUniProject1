@@ -1,3 +1,4 @@
+@import url("vars.css");
 
 .home_background
 {
@@ -7,6 +8,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-position-y: 55%;
     top: 0;
     left: 0;
     right: 0;
@@ -19,9 +21,9 @@ main {
 }
 
 .home_content {
-    padding-top: 150px;
     padding-left: 20px;
     color: white;
+    padding-bottom: 120px;
 }
 
 .main_header > b {
@@ -30,11 +32,12 @@ main {
 
 .main_header {
     font-size: 30px;
+    padding-top: 160px;
 }
 
 .second_header {
     font-size: 18px;
-    margin-bottom: -50px;
+    padding-top: 50px;
 }
 
 section {
@@ -44,13 +47,17 @@ section {
     display: inline-block;
     background: #fbfbfb;
     padding: 35px 65px;
+    padding-bottom: 50px;
     transition: width .25s,right .25s,height .25s,margin .25s;
     box-shadow: 0 20px 22px 0 rgba(0,0,0,0.12);
     border: solid 1px #f5f5f5;
-    margin-left: 850px;
+    margin-left: 800px;
     margin-bottom: 300px;
-    margin-top: -200px;
+    margin-top: -450px;
     border-radius: 12px;
+    margin-right: 80px;
+    position: absolute;
+    z-index: 1;
 }
 
 .form-header {
@@ -75,7 +82,7 @@ section {
 }
 
 .destination_input:focus {
-    border: 2px solid #fea353;
+    border: 2px solid var(--main-buttons-background);
 }
 
 .start_date_input {
@@ -89,7 +96,7 @@ section {
 }
 
 .start_date_input:focus {
-    border: 2px solid #fea353;
+    border: 2px solid var(--main-buttons-background);
 }
 
 
@@ -104,7 +111,7 @@ section {
 }
 
 .end_date_input:focus {
-    border: 2px solid #fea353;
+    border: 2px solid var(--main-buttons-background);
 }
 
 /* Removes the clear button from date inputs */
@@ -130,7 +137,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     line-height: 30px;
     padding-left: 30px;
     padding-right: 30px;
-    background: #fea353;
+    background: var(--main-buttons-background);
     border: none;
     outline: none;
     cursor: pointer;
@@ -138,13 +145,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .form-but:hover {
-    background: #fe8b1d;
+    background: var(--main-buttons-hover);
 }
 
 .how-to {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
 }
 
 .how-to-header {
@@ -154,7 +162,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .first-how-to {
-    margin-right: 70%;
+    margin-right: 50%;
     font-size: 14px;
     display: inline-block;
 }
@@ -165,57 +173,45 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .first-how-to-arrow {
-    margin-right: 43%;
+    margin-right: 23%;
     display: block;
     margin-top: -110px;
 
 }
 
 .second-how-to {
-    margin-right: 22%;
+    margin-right: 2%;
     font-size: 14px;
     display: inline-block;
     margin-top: -118px;
 }
 
 .second-how-to-arrow {
-    margin-left: 3%;
+    margin-left: 23%;
     display: block;
     margin-top: -110px;
 }
 
 .third-how-to {
-    margin-left: 27%;
-    font-size: 14px;
-    display: inline-block;
-    margin-top: -140px;
-}
-
-.third-how-to-arrow {
-    margin-left: 50%;
-    display: block;
-    margin-top: -88px;
-}
-
-
-.fourth-how-to {
-    margin-left: 75%;
+    margin-left: 47%;
     font-size: 14px;
     display: inline-block;
     margin-top: -130px;
 }
 
+
 .popular-dest {
     margin-top: 50px;
-    background: #2ebdc4;
-    margin-bottom: 50px;
+    background: #f2f2f2;
+    background-size: cover;
     txet-align: center;
-
+    width: 100%;
+    padding-bottom: 50px;
 }
 
 .popular-dest-header {
     margin-top: 50px;
-    color: #FFFFFF;
+    color: black;
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 50px;
@@ -243,36 +239,50 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .dest1 {
     margin-bottom: 26px;
-    margin-left: 60px;
+    margin-left: 40px;
+    width: fit-content;
 
 }
 
 .dest2 {
     margin-top: -273px;
-    margin-left: 370px;
+    margin-left: 340px;
+    width: fit-content;
 }
 
 .dest3 {
     margin-top: -248px;
-    margin-left: 680px;
+    margin-left: 645px;
+    width: fit-content;
 }
 
 .dest4 {
-    margin-bottom: 26px;
+    margin-top: -248px;
+    margin-left: 950px;
+    width: fit-content;
 }
 
 .dest5 {
-    margin-bottom: 26px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    width: fit-content;
 }
 
 .dest6 {
-    margin-bottom: 26px;
+    margin-top: -258px;
+    margin-left: 340px;
+    width: fit-content;
 }
 
 .dest7 {
-    margin-bottom: 26px;
+    margin-top: -248px;
+    margin-left: 645px;
+    width: fit-content;
 }
 
 .dest8 {
-    margin-bottom: 26px;
+    margin-top: -248px;
+    margin-left: 950px;
+    width: fit-content;
 }
+

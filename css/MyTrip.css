@@ -1,0 +1,293 @@
+@import url("vars.css");
+
+.MyTrip-background {
+    background: url("../imgs/MyTrip.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0%;
+}
+
+.main-header{
+    padding-top: 10px;
+    padding-bottom: 270px;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+section{
+    margin-left: 2%;
+    width: 700px;
+}
+
+section.trip-main-info{
+    font-size: 20px;
+    width: 400px;
+}
+
+i.add {
+    font-size: 17px;
+}
+
+i.add:hover{
+    color: #ff56a5;
+}
+
+button.add{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+textarea {
+    width: 480px;
+    height: 150px;
+    font-size: 1em;
+    padding: 1em;
+    border: 0;
+    box-sizing: border-box;
+    background-color: #ffff77;
+}
+
+div.text {
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+
+
+/* start planning, select destination and date */
+.trip_form {
+    display: inline-block;
+    background: #fbfbfb;
+    padding: 20px 35px;
+    padding-bottom: 20px;
+    padding-top: 0;
+    transition: width .25s,right .25s,height .25s,margin .25s;
+    box-shadow: 0 20px 22px 0 rgba(0,0,0,0.12);
+    border: solid 1px #f5f5f5;
+    margin-left: 830px;
+    margin-bottom: 300px;
+    margin-top: -440px;
+    border-radius: 12px;
+    margin-right: 80px;
+    position: absolute;
+    z-index: 1;
+    width: 340px;
+    opacity: 0.92;
+}
+
+.form-header {
+    margin-bottom: -2px;
+}
+
+.destination_input {
+    padding: 7px 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid rgba(203, 204, 188, 0.76);
+    border-radius: 4px;
+    text-align: start;
+    font-size: 14px;
+    font-family: inherit;
+    width: 330px;
+    outline: none;
+}
+
+.destination_input:focus {
+    border: 2px solid var(--main-buttons-background);
+}
+
+.start_date_input {
+    margin-bottom: 10px;
+    width: 266px;
+    outline: none;
+    border: 2px solid rgba(203, 204, 188, 0.76);
+    border-radius: 4px;
+    font-family: inherit;
+    padding: 7px;
+}
+
+.start_date_input:focus {
+    border: 2px solid var(--main-buttons-background);
+}
+
+.end_date_input {
+    margin-bottom: 15px;
+    width: 273px;
+    outline: none;
+    border: 2px solid rgba(203, 204, 188, 0.76);
+    border-radius: 4px;
+    font-family: inherit;
+    padding: 7px;
+}
+
+.end_date_input:focus {
+    border: 2px solid var(--main-buttons-background);
+}
+
+.form-but {
+    font-size: 16px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: var(--main-buttons-background);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+/*favorite activities list and equipment list style*/
+/* Style the list (remove margins and bullets, etc) */
+ul.favorite-activities-list,
+ul.equipment-list {
+    list-style-type: none;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* Style the list items */
+ul.favorite-activities-list li,
+ul.equipment-list li {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    position: relative;
+    z-index: 50;
+    width: 400px;
+}
+
+/* Add a light grey background color on hover */
+ul.favorite-activities-list li:hover,
+ul.equipment-list li:hover{
+    background-color: #eee;
+}
+
+/* Style the close button (span) */
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding: 12px 16px;
+    transform: translate(0%, -50%);
+}
+
+.close:hover {
+    background: #bbb;
+}
+
+section.lists{
+    display: inline-block;
+    width: 49px;
+}
+
+section.flex-container{
+    display: flex;
+}
+
+/*calendar style*/
+section.calendar {
+    width: 600px;
+    display: inline-block;
+    padding-right: 80px;
+}
+
+div.my-calendar{
+    padding-left: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Month header */
+.month {
+    padding: 70px 25px;
+    width: 90%;
+    background: #ff56a5;
+    text-align: center;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    background: #ff56a5;
+    color: white
+}
