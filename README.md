@@ -6,8 +6,9 @@ go to:
  http://localhost/WebProject/index.html
  
  login with these details: 
- email:
- tidharsa@post.bgu.ac.il
- password:
- tidhar123
- 
+     email:
+     tidharsa@post.bgu.ac.il
+     password:
+     tidhar123
+     
+have fun!
