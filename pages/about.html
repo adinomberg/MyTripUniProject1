@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <meta name="author" content="Adi Nomberg, Stav Bar, Lital Menashe"/>
+    <meta name="description" content="Information about the company"/>
+    <meta name="keywords" content="Trips, Planning, About, Company" />
+    <link rel="shortcut icon" href="../imgs/icon-logo.png">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body class="about-body">
+<div class="about_background">
+    <!-- Navigation -->
+    <nav>
+        <ul class="main_nav_list">
+            <li class="main_nav_item_logo"><a href="../index.html"><img class="logo_image" src="../imgs/logo.png" alt="mytrip-logo"/></a></li>
+            <li class="main_nav_item"><a href="../index.html">Home</a></li>
+            <li class="main_nav_item active"><a href="about.html">About Us</a></li>
+            <li class="main_nav_item-Equipment"><a href="equipmentListSearch.php" class="dropbtn">Equipment Lists</a>
+                <div class="equipment-dropdown">
+                    <a href="equipmentListSearch.php" class="equipment-dropdown-item">Search Equipment List</a>
+                    <a href="addEquipmentList.html" class="equipment-dropdown-item">Add Equipment List</a>
+                </div>
+            </li>
+            <li class="main_nav_item"><a href="activitySearch.php">Activities</a></li>
+            <li class="main_nav_item"><a href="contactUs.html">Contact Us</a></li>
+            <li class="main_nav_item login"><button type="button" class="but_login"><i class="material-icons login-icon">person_pin</i></button></li>
+            <li class="main_nav_item plan"><a href="MyTrip.php"><button type="button" class="but_plan">Plan Your Trip!</button></a></li>
+        </ul>
+        <div class="arrow-up"></div>
+        <div class="login-form">
+            <form method="post" action="login-form.php">
+                <div class="email-container-login">
+                    <input type="text" name="email" class="email-login" placeholder="Email"/>
+                </div>
+                <div class="password-container-login">
+                    <input type="password" name="password" class="password-login" placeholder="Password"/>
+                </div>
+                <input type="submit" name="submit-login" value="Log In" class="login-but"/>
+                <div class="login-sent">
+                    Don't have an account yet? Sign up <a class="here-link" href="loginOrSignup.php">HERE</a>.
+                </div>
+            </form>
+        </div>
+    </nav>
+    <main>
+        <section class="about-header">
+            <h1>About Us</h1>
+        </section>
+</div>
+<article class="about-main">
+    <p>
+        MyTrip is a small startup, made of great personnel with passion for trips and adventures around the globe.<br/>
+        We believe that every person has unique qualities that define him/her, so their trips shouldn't be the same!<br/>
+    </p>
+    <p>
+        We made a free online trip planner that can help you build a personalized itinerary for your next vacation.<br/>
+        To plan with MyTrip, you tell it where you&apos;re going, your dates, and your sightseeing preferences. Within seconds, you'll receive a detailed list with trip routes, restaurants, attractions and more.<br/>
+    <p>
+        You can also create a custom activity on your calendar. You can name the restaurant you want to eat at for lunch, the hotel you want to sleep in, or another activity that you couldn't find in our database.<br/>
+        The software provides a complete set of tools and recommendations so you can research the destination and make any desired changes to the itinerary.<br/>
+    </p>
+    <p>
+        MyTrip's trip-planning features also include an easy and convenient system for building your equipment list. We will help you find a recommended equipment list for your needs, and you can also customize your own list.<br/>
+    </p>
+    If you have some important extra details you need to remember such as important phone numbers, transportation details, accommodation details, a link to another site with information about a custom activity, addresses, and much more, you can write everything down in your trip Notes.<br/>
+    </p>
+    <p>
+        Once you have settled on the itinerary and made your bookings, you can take your plan with you on the trip, and see it from anywhere you want! If you want to ask friends for advice on the itinerary, you can do so.<br/>
+        MyTrip makes vacation planning fast, fun, and easy!
+    </p>
+    <div class="about-pic">
+        <img class="map-pic" src="../imgs/about-img.jpg" alt="map-pic"/>
+    </div>
+</article>
+<article class="about-how">
+    <h2>How does MyTrip work?</h2>
+    <p>
+        In order to start planning your trip, select a destination and the required dates.<br/>
+    </p>
+    <p>
+        You can add to your calender custom activities or search for desired activities on our site.<br/>
+        To search for activities you enter the search details and mark the activities you like from the search results. You can click on an activity to see its' details.<br/>
+        After you've marked the wanted activities you'll see them in your trip page.<br/>
+        Now you can drag activities from the favourite activities section to your calender.<br/>
+    </p>
+    <p>
+        If you want to make your owm equipment list you type the items one by one to your list. If you want to get a recommended list you insert the search details and choose a list that suits your needs. <br/>
+        Once you chose a list you'll see it in your trip page.<br/>
+    </p>
+    <p>
+        To add notes to your trip just type your notes in the notes section in your trip page.<br/>
+    </p>
+    <p>
+        And now you can start your trip peacefully knowing you have all the details you need in one place!
+    </p>
+</article>
+</main>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-col col1">
+            <h2 class="footer-headline">MyTrip</h2>
+            <p> A free online trip planner that can help you build a personalized itinerary for your next vacation. </p>
+        </div>
+        <div class="footer-col col2">
+            <ul class="list-footer">
+                <li class=""><h2 class="footer-headline">Information</h2></li>
+                <li class=""><a class="footer-link" href="about.html">About</a></li>
+                <li class=""><a class="footer-link" href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col col3">
+            <ul class="list-footer">
+                <li class=""><h2 class="footer-headline">Have a Question?</h2></li>
+                <li><span class="icon icon-map-marker"></span><i class="material-icons footer-icon">location_on</i><span class="footer-text"> 1 Ben-Gurion Ave, Beer-Sheva, Israel</span></li>
+                <li><span class="icon icon-phone"></span><i class="material-icons footer-icon">phone</i><span class="footer-text"> +972-8-646-1600</span></a></li>
+                <li><span class="icon icon-envelope"></span><i class="material-icons footer-icon">email</i><span class="footer-text"> info@mytrip.com</span></a></li>
+            </ul>
+        </div>
+
+        <p class="copyright">
+            <i class="material-icons footer-icon">copyright</i>MyTrip  All rights reserved | This website is made with <i class="material-icons footer-icon">favorite</i> by Adi Nomberg, Lital Menashe, Stav Bar
+        </p>
+    </div>
+</footer>
+<script src="../js/loginForm.js"></script>
+</body>
+</html>

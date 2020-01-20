@@ -23,6 +23,16 @@ img.logo_image {
     z-index: 100;
 }
 
+.main_nav_item-user{
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    margin-top: 25px;
+    color:darkorange;
+}
+
 .main_nav_item_logo {
     display: inline-block;
     padding-top: 10px;
@@ -49,14 +59,9 @@ img.logo_image {
     text-decoration: none;
 }
 
-.main_nav_item.active a
-{
+.main_nav_item.active a, .main_nav_item-Equipment.active a,
+.main_nav_item a:hover, .dropbtn:hover, .equipment-dropdown-item:hover, .but_login:hover, .but_login:focus {
     color: #9c9c9c;
-}
-
-.main_nav_item a:hover {
-    color: #9c9c9c;
-
 }
 
 
@@ -78,7 +83,6 @@ img.logo_image {
 
 .equipment-dropdown a:hover {
     background-color: rgba(255, 255, 255, 0.95);
-
 }
 
 .main_nav_item-Equipment:hover .equipment-dropdown {
@@ -95,30 +99,19 @@ li.main_nav_item-Equipment {
     text-align: center;
     padding: 26px 14px 16px;
     text-decoration: none;
-
 }
 
 .main_nav_item-Equipment{
     float: left;
 }
 
-.dropbtn:hover{
-    color: #9c9c9c;
-}
 
-.equipment-dropdown-item:hover{
-    color: #9c9c9c;
-}
-
-
-li.main_nav_item.plan {
+li.main_nav_item.plan, li.main_nav_item.login {
     float: right;
     margin-top: 25px;
 }
 
 li.main_nav_item.login {
-    float: right;
-    margin-top: 25px;
     margin-left: -1%;
 }
 
@@ -131,14 +124,6 @@ i.login-icon{
     border: none;
     outline: none;
     cursor: pointer;
-}
-
-.but_login:hover {
-    color: #9c9c9c;
-}
-
-.but_login:focus {
-    color: #9c9c9c;
 }
 
 .login-form {
@@ -155,16 +140,15 @@ i.login-icon{
     box-shadow: 0 20px 22px 0 rgba(0,0,0,0.12);
 }
 
-.email-container-login {
+.email-container-login, .password-container-login {
     margin-left: 20%;
 }
 
 .password-container-login {
-    margin-left: 20%;
     margin-top: 5px;
 }
 
-.email-login {
+.email-login, .password-login {
     padding: 7px 10px;
     padding-left: 6px;
     padding-right: 6px;
@@ -177,27 +161,9 @@ i.login-icon{
     outline: none;
 }
 
-.password-login {
-    padding: 7px 10px;
-    padding-left: 6px;
-    padding-right: 6px;
-    box-sizing: border-box;
-    border: 2px solid rgba(203, 204, 188, 0.76);
-    border-radius: 4px;
-    text-align: start;
-    font-size: 14px;
-    font-family: inherit;
-    outline: none;
-}
-
-.email-login:focus {
+.email-login:focus, .password-login:focus {
     border: 2px solid var(--main-buttons-background);
 }
-
-.password-login:focus {
-    border: 2px solid var(--main-buttons-background);
-}
-
 
 .login-but {
     font-size: 16px;
@@ -216,7 +182,7 @@ i.login-icon{
     margin-left: 36%;
 }
 
-.login-but:hover {
+.but_plan:hover, .login-but:hover {
     background: var(--main-buttons-hover);
 }
 
@@ -230,6 +196,7 @@ i.login-icon{
     font-weight: bolder;
     text-decoration: none;
     color: #9c9c9c;
+
 }
 
 .here-link:hover {
@@ -250,10 +217,6 @@ i.login-icon{
     outline: none;
     cursor: pointer;
     border-radius: 12px;
-}
-
-.but_plan:hover {
-    background: var(--main-buttons-hover);
 }
 
 
@@ -279,10 +242,6 @@ main {
     font-size: 20px;
 }
 
-section {
-}
-
-
 footer {
     text-align: center;
     padding: 75px;
@@ -293,51 +252,35 @@ footer {
 
 .list-footer{
     list-style-type: none;
-
 }
 
-.col1{
+.col1, .col2, .col3 {
     text-align: left;
     position: relative;
     min-height: 1px;
     float: left;
     width: 20%;
-    margin-left: -10px;
-    padding-left: 170px;
+}
 
+.col1 {
+    padding-left: 170px;
+    margin-left: -10px;
 }
 
 .col2{
-    text-align: left;
-    position: relative;
-    min-height: 1px;
-    float: left;
-    width: 20%;
     margin-left: 70px;
-
 }
 
 .col3{
-    text-align: left;
-    position: relative;
-    min-height: 1px;
-    float: left;
     width: 27%;
-
 }
 
 .container{
     display: inline-block;
     font-size: 13px;
-
 }
 
-h2.footer-headline {
-    font-size: 15px;
-
-}
-
-i.footer-icon{
+h2.footer-headline, i.footer-icon {
     font-size: 15px;
 }
 

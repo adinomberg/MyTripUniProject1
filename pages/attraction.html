@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Adi Nomberg, Stav Bar, Lital Menashe"/>
+    <meta name="Attraction" content="information about attractions"/>
+    <meta name="keywords" content="Attraction, information" />
+    <link rel="shortcut icon" href="../imgs/icon-logo.png">
+    <title>Attractions</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/activities.css">
+    <link rel="stylesheet" type="text/css" href="../css/attraction.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="Attractions-background">
+
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <ul class="main_nav_list">
+                <li class="main_nav_item_logo"><a href="../index.html"><img class="logo_image" src="../imgs/logo.png" alt="mytrip-logo"/></a></li>
+                <li class="main_nav_item"><a href="../index.html">Home</a></li>
+                <li class="main_nav_item"><a href="about.html">About Us</a></li>
+                <li class="main_nav_item-Equipment"><a href="equipmentListSearch.php" class="dropbtn">Equipment Lists</a>
+                    <div class="equipment-dropdown">
+                        <a href="equipmentListSearch.php" class="equipment-dropdown-item">Search Equipment List</a>
+                        <a href="addEquipmentList.html" class="equipment-dropdown-item">Add Equipment List</a>
+                    </div>
+                </li>
+                <li class="main_nav_item active"><a href="activitySearch.php">Activities</a></li>
+                <li class="main_nav_item"><a href="contactUs.html">Contact Us</a></li>
+                <li class="main_nav_item login"><button type="button" class="but_login"><i class="material-icons login-icon">person_pin</i></button></li>
+                <li class="main_nav_item plan"><a href="MyTrip.php"><button type="button" class="but_plan">Plan Your Trip!</button></a></li>
+            </ul>
+            <div class="arrow-up"></div>
+            <div class="login-form">
+                <form method="post" action="login-form.php">
+                    <div class="email-container-login">
+                        <input type="text" name="email" class="email-login" placeholder="Email"/>
+                    </div>
+                    <div class="password-container-login">
+                        <input type="password" name="password" class="password-login" placeholder="Password"/>
+                    </div>
+                    <input type="submit" name="submit-login" value="Log In" class="login-but"/>
+                    <div class="login-sent">
+                        Don't have an account yet? Sign up <a class="here-link" href="loginOrSignup.php">HERE</a>.
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="main-header">Attractions</h1>
+</div>
+<h1 class="destination-header"> Eiffel Tower </h1>
+<section class="tags">
+    <p class="tags"> <i class="material-icons">flight</i><br> <b>Destination:</b><br> France <br></p>
+    <p class="tags">  <i class="material-icons">category</i><br> <b> Category:</b><br> city trip <br></p>
+    <p class="tags"> <i class="material-icons">cloud</i> <b><br> Recommended season:</b><br> all year round <br></p>
+</section>
+
+<div class="div-favorite">
+    <button type="submit" class="favorite-button" name="favorites-submit" value="submitted" href=".html"><i class="material-icons star">star</i>Add To Your Favorites</button>
+</div>
+<section>
+    <h3> Description </h3>
+    <article>
+        With its famous tapering cast iron tip, the Eiffel Tower is not just the symbol of Paris but of all of France.
+        Erected by Gustave Eiffel to commemorate the centennial of the French Revolution in 1889, the 1,050-foot
+        (320-meter) tower once held the title of the world's tallest structure.
+        Despite having been dwarfed by Dubai's Burj Khalifa and The Shard in London, the Eiffel Tower remains one of
+        the most recognizable landmarks on the planet. View the architectural icon from afar, or stop in at the three
+        observation levels for stellar city views.
+    </article>
+
+    <h3> Things to Know Before You Go </h3>
+    <ul>
+        <li> Plan your visit in advance and book skip-the-line tickets to avoid long wait times. </li>
+        <li> If you purchase an admission ticket for Eiffel Tower summit access, you'll head straight
+            to the top before stopping at the lower levels on your downward journey.</li>
+        <li> There are ATMs and souvenir shops on the ground floor. </li>
+        <li> The tower's first two levels are wheelchair accessible, but the summit is not.</li>
+        <li> You'll be required to undergo a security screening before entering the tower.</li>
+    </ul>
+
+    <h3> Location and Contact Information</h3>
+    <section>
+        <i class="material-icons">location_on</i> <b>Address:</b> 5 Avenue Anatole France, 75007 Paris, France <br>
+        <i class="material-icons">phone</i> <b>Phone Number:</b> +33 (0)8 92 70 12 39 <br>
+        <br>
+
+    </section>
+    <img class="activitie-img" src="../imgs/eiffel-tower.jpg" title="Eiffel Tower" alt="Eiffel Tower"/>
+
+</section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-col col1">
+            <h2 class="footer-headline">MyTrip</h2>
+            <p> A free online trip planner that can help you build a personalized itinerary for your next vacation. </p>
+        </div>
+        <div class="footer-col col2">
+            <ul class="list-footer">
+                <li class=""><h2 class="footer-headline">Information</h2></li>
+                <li class=""><a class="footer-link" href="about.html">About</a></li>
+                <li class=""><a class="footer-link" href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col col3">
+            <ul class="list-footer">
+                <li class=""><h2 class="footer-headline">Have a Question?</h2></li>
+                <li><span class="icon icon-map-marker"></span><i class="material-icons footer-icon">location_on</i><span class="footer-text"> 1 Ben-Gurion Ave, Beer-Sheva, Israel</span></li>
+                <li><span class="icon icon-phone"></span><i class="material-icons footer-icon">phone</i><span class="footer-text"> +972-8-646-1600</span></a></li>
+                <li><span class="icon icon-envelope"></span><i class="material-icons footer-icon">email</i><span class="footer-text"> info@mytrip.com</span></a></li>
+            </ul>
+        </div>
+
+        <p class="copyright">
+            <i class="material-icons footer-icon">copyright</i>MyTrip  All rights reserved | This website is made with <i class="material-icons footer-icon">favorite</i> by Adi Nomberg, Lital Menashe, Stav Bar
+        </p>
+    </div>
+</footer>
+<script src="../js/loginForm.js"></script>
+</body>
+</html>

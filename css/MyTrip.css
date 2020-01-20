@@ -23,12 +23,12 @@
     margin-top: 40px;
 }
 
-section{
+section {
     margin-left: 2%;
     width: 700px;
 }
 
-section.trip-main-info{
+section.trip-main-info {
     font-size: 20px;
     width: 400px;
 }
@@ -37,11 +37,11 @@ i.add {
     font-size: 17px;
 }
 
-i.add:hover{
+i.add:hover {
     color: #ff56a5;
 }
 
-button.add{
+button.add {
     background-color: transparent;
     border: none;
     outline: none;
@@ -105,36 +105,26 @@ div.text {
     outline: none;
 }
 
-.destination_input:focus {
+.destination_input:focus, .start_date_input:focus, .end_date_input:focus {
     border: 2px solid var(--main-buttons-background);
+}
+
+.start_date_input, .end_date_input {
+    outline: none;
+    border: 2px solid rgba(203, 204, 188, 0.76);
+    border-radius: 4px;
+    font-family: inherit;
+    padding: 7px;
 }
 
 .start_date_input {
     margin-bottom: 10px;
     width: 266px;
-    outline: none;
-    border: 2px solid rgba(203, 204, 188, 0.76);
-    border-radius: 4px;
-    font-family: inherit;
-    padding: 7px;
-}
-
-.start_date_input:focus {
-    border: 2px solid var(--main-buttons-background);
 }
 
 .end_date_input {
     margin-bottom: 15px;
     width: 273px;
-    outline: none;
-    border: 2px solid rgba(203, 204, 188, 0.76);
-    border-radius: 4px;
-    font-family: inherit;
-    padding: 7px;
-}
-
-.end_date_input:focus {
-    border: 2px solid var(--main-buttons-background);
 }
 
 .form-but {
@@ -152,6 +142,10 @@ div.text {
     border-radius: 12px;
 }
 
+.form-but:hover {
+    background: var(--main-buttons-hover);
+}
+
 /*favorite activities list and equipment list style*/
 /* Style the list (remove margins and bullets, etc) */
 ul.favorite-activities-list,
@@ -159,6 +153,11 @@ ul.equipment-list {
     list-style-type: none;
     padding-left: 40px;
     padding-right: 40px;
+}
+
+.favorite-activities-list a {
+    text-decoration: none;
+    color: black;
 }
 
 /* Style the list items */
@@ -290,4 +289,14 @@ ul {
     padding: 5px;
     background: #ff56a5;
     color: white
+}
+
+.close_ac_b {
+    text-decoration: none;
+    color: black;
+    background:none;
+    border:none;
+    padding:0;
+    font: inherit;
+    cursor: pointer;
 }

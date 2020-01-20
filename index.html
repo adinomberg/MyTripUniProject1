@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="imgs/icon-logo.png">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/homePage.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
@@ -20,30 +20,30 @@
         <ul class="main_nav_list">
             <li class="main_nav_item_logo"><a href="index.html"><img class="logo_image" src="imgs/logo.png" alt="mytrip-logo"></a></li>
             <li class="main_nav_item active"><a href="index.html">Home</a></li>
-            <li class="main_nav_item"><a href="html/about.html">About Us</a></li>
-            <li class="main_nav_item-Equipment active"><a href="equipmentListSearch.html" class="dropbtn">Equipment Lists</a>
+            <li class="main_nav_item"><a href="pages/about.html">About Us</a></li>
+            <li class="main_nav_item-Equipment"><a href="pages/equipmentListSearch.php" class="dropbtn">Equipment Lists</a>
                 <div class="equipment-dropdown">
-                    <a  href="equipmentListSearch.html" class="equipment-dropdown-item">Search Equipment List</a>
-                    <a  href="AddEquipmentList.html" class="equipment-dropdown-item">Add Equipment List</a>
+                    <a href="pages/equipmentListSearch.php" class="equipment-dropdown-item">Search Equipment List</a>
+                    <a href="pages/AddEquipmentList.html" class="equipment-dropdown-item">Add Equipment List</a>
                 </div>
             </li>
-            <li class="main_nav_item"><a href="html/activitysearch.html">Activities</a></li>
-            <li class="main_nav_item"><a href="html/contactus.html">Contact Us</a></li>
+            <li class="main_nav_item"><a href="pages/activitySearch.php">Activities</a></li>
+            <li class="main_nav_item"><a href="pages/contactUs.html">Contact Us</a></li>
             <li class="main_nav_item login"><button type="button" class="but_login"><i class="material-icons login-icon">person_pin</i></button></li>
-            <li class="main_nav_item plan"><a href="html/MyTrip.html"><button type="button" class="but_plan">Plan Your Trip!</button></a></li>
+            <li class="main_nav_item plan"><a href="pages/MyTrip.php"><button type="button" class="but_plan">Plan Your Trip!</button></a></li>
         </ul>
         <div class="arrow-up"></div>
         <div class="login-form">
-            <form method="post" action="login-form.php">
+            <form method="post" action="pages/login-form.php">
                 <div class="email-container-login">
-                    <input type="text" class="email-login" placeholder="Email"/>
+                    <input type="text" name="email" class="email-login" placeholder="Email"/>
                 </div>
                 <div class="password-container-login">
-                    <input type="password" class="password-login" placeholder="Password"/>
+                    <input type="password" name="password" class="password-login" placeholder="Password"/>
                 </div>
                 <input type="submit" name="submit-login" value="Log In" class="login-but"/>
                 <div class="login-sent">
-                    Don't have an account yet? Sign up <a class="here-link" href="html/loginorsignup.html">HERE</a>.
+                    Don't have an account yet? Sign up <a class="here-link" href="pages/loginOrSignup.php">HERE</a>.
                 </div>
             </form>
         </div>
@@ -104,75 +104,75 @@
             </form>
         </section>
 </div>
-        <section class="how-to">
-            <h2 class="how-to-header"> Easy to use, easy to browse </h2>
-            <article>
-                <div class="first-how-to">
-                    <img class="first-how-to-img" src="imgs/first-how-to.PNG" alt="enter-destination"></br>
-                    <b class="how-to-head">Enter destination and dates</b></br>
-                    <p>Open yourself a complete</br>
-                        day-by-day itinerary</br>
-                        based on your preferences.</p>
-                </div>
-                <div class="first-how-to-arrow">
-                    <img src="imgs/first-arrow.PNG" alt="arrow1">
-                </div>
-                <div class="second-how-to">
-                    <img class="second-how-to-img" src="imgs/second-how-to.PNG" alt="customise-it"></br>
-                    <b class="how-to-head">Customize it</b></br>
-                    <p>Refine your plan. Find the best</br>
-                        activities, routes, equipment</br>
-                        lists and build your itinerary.</p>
-                </div>
-                <div class="second-how-to-arrow">
-                    <img src="imgs/second-arrow.PNG" alt="arrow2">
-                </div>
-                <div class="third-how-to">
-                    <img class="third-how-to-img" src="imgs/third-how-to.PNG" alt="manage-it"></br>
-                    <b class="how-to-head">Manage it</b></br>
-                    <p>Everything in one place.</br>
-                        Everyone on the same page.</p>
-                </div>
-            </article>
-        </section>
+<section class="how-to">
+    <h2 class="how-to-header"> Easy to use, easy to browse </h2>
+    <article>
+        <div class="first-how-to">
+            <img class="first-how-to-img" src="imgs/first-how-to.PNG" alt="enter-destination"></br>
+            <b class="how-to-head">Enter destination and dates</b></br>
+            <p>Open yourself a complete</br>
+                day-by-day itinerary</br>
+                based on your preferences.</p>
+        </div>
+        <div class="first-how-to-arrow">
+            <img src="imgs/first-arrow.PNG" alt="arrow1">
+        </div>
+        <div class="second-how-to">
+            <img class="second-how-to-img" src="imgs/second-how-to.PNG" alt="customise-it"></br>
+            <b class="how-to-head">Customize it</b></br>
+            <p>Refine your plan. Find the best</br>
+                activities, routes, equipment</br>
+                lists and build your itinerary.</p>
+        </div>
+        <div class="second-how-to-arrow">
+            <img src="imgs/second-arrow.PNG" alt="arrow2">
+        </div>
+        <div class="third-how-to">
+            <img class="third-how-to-img" src="imgs/third-how-to.PNG" alt="manage-it"></br>
+            <b class="how-to-head">Manage it</b></br>
+            <p>Everything in one place.</br>
+                Everyone on the same page.</p>
+        </div>
+    </article>
+</section>
 
-        <section class="popular-dest">
-            <h2 class="popular-dest-header">Popular destinations in 2018</h2>
-                <div class="dest1">
-                    <img class="dest-img" src="imgs/popular_1.jpg" alt="turkey"></br>
-                    <div class="dest-title">Turkey</div>
-                </div>
-                <div class="dest2">
-                    <img class="dest-img" src="imgs/popular_2.jpg" alt="hawaii"></br>
-                    <div class="dest-title">Hawaii</div>
-                </div>
-                <div class="dest3">
-                    <img class="dest-img" src="imgs/popular_3.jpg" alt="ireland"></br>
-                    <div class="dest-title">Ireland</div>
-                </div>
-                <div class="dest4">
-                    <img class="dest-img" src="imgs/popular_4.jpg" alt="thailand"></br>
-                    <div class="dest-title">Thailand</div>
-                </div>
-                <div class="dest5">
-                    <img class="dest-img" src="imgs/popular_5.jpg" alt="croatia"></br>
-                    <div class="dest-title">Croatia</div>
-                </div>
-                <div class="dest6">
-                    <img class="dest-img" src="imgs/popular_6.jpg" alt="bali"></br>
-                    <div class="dest-title">Bali</div>
-                </div>
-                <div class="dest7">
-                    <img class="dest-img" src="imgs/popular_7.jpg" alt="france"></br>
-                    <div class="dest-title">France</div>
-                </div>
-                <div class="dest8">
-                    <img class="dest-img" src="imgs/popular_8.jpg" alt="vietnam"></br>
-                    <div class="dest-title">Vietnam</div>
-                </div>
-        </section>
+<section class="popular-dest">
+    <h2 class="popular-dest-header">Popular destinations in 2018</h2>
+    <div class="dest1">
+        <img class="dest-img" src="imgs/popular_1.jpg" alt="turkey"></br>
+        <div class="dest-title">Turkey</div>
+    </div>
+    <div class="dest2">
+        <img class="dest-img" src="imgs/popular_2.jpg" alt="hawaii"></br>
+        <div class="dest-title">Hawaii</div>
+    </div>
+    <div class="dest3">
+        <img class="dest-img" src="imgs/popular_3.jpg" alt="ireland"></br>
+        <div class="dest-title">Ireland</div>
+    </div>
+    <div class="dest4">
+        <img class="dest-img" src="imgs/popular_4.jpg" alt="thailand"></br>
+        <div class="dest-title">Thailand</div>
+    </div>
+    <div class="dest5">
+        <img class="dest-img" src="imgs/popular_5.jpg" alt="croatia"></br>
+        <div class="dest-title">Croatia</div>
+    </div>
+    <div class="dest6">
+        <img class="dest-img" src="imgs/popular_6.jpg" alt="bali"></br>
+        <div class="dest-title">Bali</div>
+    </div>
+    <div class="dest7">
+        <img class="dest-img" src="imgs/popular_7.jpg" alt="france"></br>
+        <div class="dest-title">France</div>
+    </div>
+    <div class="dest8">
+        <img class="dest-img" src="imgs/popular_8.jpg" alt="vietnam"></br>
+        <div class="dest-title">Vietnam</div>
+    </div>
+</section>
 
-    </main>
+</main>
 <!-- Footer -->
 <footer>
     <div class="container">
@@ -183,8 +183,8 @@
         <div class="footer-col col2">
             <ul class="list-footer">
                 <li class=""><h2 class="footer-headline">Information</h2></li>
-                <li class=""><a class="footer-link" href="html/about.html">About</a></li>
-                <li class=""><a class="footer-link" href="html/contactus.html">Contact Us</a></li>
+                <li class=""><a class="footer-link" href="pages/about.html">About</a></li>
+                <li class=""><a class="footer-link" href="pages/contactUs.html">Contact Us</a></li>
             </ul>
         </div>
         <div class="footer-col col3">
@@ -201,8 +201,8 @@
         </p>
     </div>
 </footer>
-<script src="js/login-form.js"></script>
-<script src="js/fading-in-pics.js"></script>
-<script src="js/date-today.js"></script>
+<script src="js/loginForm.js"></script>
+<script src="js/fadingInPics.js"></script>
+<script src="js/dateToday.js"></script>
 </body>
 </html>

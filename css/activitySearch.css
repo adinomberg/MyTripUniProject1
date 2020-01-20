@@ -1,0 +1,217 @@
+@import url("vars.css");
+
+.activity_background
+{
+    background: url("../imgs/act-bg.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 55%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.activity-header {
+    font-size: 36px;
+    padding-top: 160px;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.search-form {
+    margin-top: 200px;
+    padding: 10px;
+    text-align: center;
+    position: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 30px;
+    background: rgba(246, 246, 246, 0.85);
+    font-size: 16px;
+}
+
+.main-search-activity {
+    padding-bottom: 110px;
+}
+
+
+#acitvity-name-search, #acitvity-destination, #acitvity-season-search, #acitvity-category-search {
+    padding: 7px 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    box-sizing: border-box;
+    border: 2px solid rgba(203, 204, 188, 0.76);
+    border-radius: 4px;
+    text-align: start;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+}
+
+#acitvity-name-search:focus, #acitvity-destination:focus, #acitvity-season-search:focus, #acitvity-category-search:focus {
+    border: 2px solid var(--main-buttons-background);
+}
+
+#acitvity-name-search {
+    width: 50%;
+}
+
+.search-but {
+    font-size: 16px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: var(--main-buttons-background);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.search-but:hover, button.favorite-button:hover {
+    background: var(--main-buttons-hover);
+}
+
+.activity-results {
+    padding: 50px 0px 150px 80px;
+}
+
+.results-header {
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.link-to-activity {
+    text-decoration: none;
+    color: black;
+    background:none;
+    border:none;
+    padding:0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.link-to-activity:hover {
+    color: var(--main-buttons-hover);
+}
+
+.activity-pic {
+    margin-left: -230px;
+    margin-top: -130px;
+    width: 20%;
+}
+
+.activity-pic > img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.activity-details {
+    margin-left: 200px;
+    padding-top: 1px;
+}
+
+.activity-back {
+    background: #f2f2f2;
+    width: 800px;
+    margin-top: 25px;
+}
+
+/* Customize the label (the container of checkbox) */
+.contain {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.contain input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(254, 226, 140, 0.92);
+    margin-left: -300px;
+    margin-top: 40px;
+    border-radius: 100%;
+}
+
+/* On mouse-over, add an orange background color */
+.contain:hover input ~ .checkmark {
+    background-color: var(--main-buttons-hover);
+}
+
+/* When the checkbox is checked, add a dark orange background */
+.contain input:checked ~ .checkmark {
+    background-color: var(--main-buttons-hover);
+}
+
+/* Create the checkmark (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.contain input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark */
+.contain .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+button.favorite-button{
+    font-family: "Poppins", Arial, sans-serif;
+    border-radius: 12px;
+    float: left;
+    background: var(--main-buttons-background);
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 5.5px;
+    padding-left: 2px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 50px;
+}
